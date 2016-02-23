@@ -1,11 +1,11 @@
 <h1 class="center">Articles List</h1>
 
 <div align="center">
-  <%= will_paginate %>
+  <%= will_paginate :next_label => ">" , :previous_label => "<" %>
 </div>
 
 <%= render 'article', obj: @articles %>
 
 <div align="center">
-  <%= will_paginate %>
+  <%= will_paginate :next_label => ">" , :previous_label => "<" %>
 </div>

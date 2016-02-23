@@ -1,7 +1,7 @@
 <h1 align="center">All Alpha Blogers</h1>
 
 <div align="center">
-  <%= will_paginate %>
+  <%= will_paginate :next_label => ">" , :previous_label => "<" %>
   <% @users.each do |user| %>
     <ul class="listing">
       <div class="row">
@@ -17,5 +17,5 @@
       </div>
     </ul>
   <% end %>
-  <%= will_paginate %>
+  <%= will_paginate :next_label => ">" , :previous_label => "<" %>
 </div>
