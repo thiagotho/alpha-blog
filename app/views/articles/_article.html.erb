@@ -14,7 +14,7 @@
           </div>
         <% if article.categories.any? %>
           <div class="article_meta_details">
-            <p>Categories: <%= render article.categories %></p>
+            <p>Categories: <%= render article.categories.order(:name) %></p>
           </div>
         <% end %>
         
